@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.conteudo{
+    width: 95%;
+    margin: 0px auto;
+}
+div {
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4, p {
+    font-size: 1.8rem;
+}
+
+h5, li {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+    ;
+}
+
+li {
+    line-height: 2.4rem;
+}
+
+a {
+    font-size: 1.8rem;
+}
+
+.links-topo a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links-topo a:hover {
+    color: #707070;
+}
+
+.limita-tamanho {
+    width: 100%;
+    max-width: 1024px;
+}
+
+.container {
+    width: 1024px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.centralizar-flex {
+    justify-content: center;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+header {
+    background-color: #00CAD1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../assets/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.titulo {
+    position: absolute;
+    top: 35vh;
+    left: 20vh;
+
+}
+
+.branco {
+    color: #fff;
+    font-weight: 500;
+}
+
+.sobre-titulo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-medico {
+    position: relative;
+    left: 50px;
+}
+
+.img-medico-apontando-para-baixo {
+    display: none
+}
+
+.texto-cinza {
+    color: #707070;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+.sub-titulo {
+    font-weight: 500;
+    text-align: center;
+}
+
+.img-cards-especialidades {
+    width: 100%;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #707070;
+    border: 2px solid #bbbbbb;
+    box-shadow: 2px 2px 2px 2px #dddddd;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.card, .img-cards-especialidades {
+    border-radius: 15px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #00CAD1;
+    margin-top: 20px;
+}
+
+.centralizar-texto {
+    text-align: center;
+}
+.link-especialidades{
+    text-decoration: none;
+    color: #707070;
+    font-size: 2.5rem;
+}
+
+.link-especialidades:hover{
+   color: #404040;
+}
+
+.mapa {
+    width: 100%;
+    height: 60vh;
+}
+
+#contato div h2, p {
+    margin-bottom: 20px;
+}
+
+.rodape {
+    background-color: #0D6E71;
+    color: #fff;
+}
+
+.rodape div img {
+    margin-top: 50px;
+}
+@media(min-width: 1025px){
+    .banner{ height: 500px;
+    }
+}
+@media(max-width: 1024px){
+    .banner{
+        height: 400px;
+    }
+    .titulo{
+        top: 25vh;
+    }
+}
+@media(max-width: 866px) {
+    .img-medico {
+        height: 150px;
+        position: relative;
+        left: 300px;
+        top: 20px;
+    }
+
+    ul {
+        padding-left: 250px;
+        margin-top: 15px;
+    }
+
+}
+@media(max-width: 800px) {
+    .img-medico-apontando-para-baixo {
+        display: block;
+        height: 200px;
+    }
+
+    .img-medico {
+        display: none;
+    }
+    ul{
+        padding-left: 100px;
+    }
+    li{
+        font-size: 1.8rem;
+    }
+
+}
+@media(max-width: 768px){
+    .banner{height: 300px}
+    .titulo{
+        top: 20vh;
+        left: 10vh;
+    }
+}
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+@media (max-width: 425px) {
+
+    .borda-topo {
+        border-bottom: 1px solid #00bbc1;
+    }
+
+    .logo {
+        height: 15vh;
+    }
+
+    header {
+        height: 25vh;
+    }
+
+    .banner {
+        background-position: 40%;
+        height: 200px;
+    }
+
+    .titulo {
+        position: absolute !important;
+        bottom: 100px !important;
+        top: 20px;
+        left: 50px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 30px;
+        width: 200px;
+    }
+    ul{
+        padding: 26px;
+    }
+    html{
+        font-size: 50%;
+    }
+    .conteudo{
+        width: 100%;
+    }
+}
+
+@media(max-width: 390px){
+    ul{
+        padding-left: 30px;
+    }
+}
+@media(min-width: 1440px){
+    html{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,87 @@
+@media(max-width: 390px){
+  ul{
+      padding-left: 30px;
+  }
+}
+@media (max-width: 425px) {
+
+  .borda-topo {
+      border-bottom: 1px solid #00bbc1;
+  }
+
+  .logo {
+      height: 15vh;
+  }
+
+  header {
+      height: 25vh;
+  }
+
+  .banner {
+      background-position: 40%;
+      height: 200px;
+  }
+
+  .titulo {
+      position: absolute;
+      bottom: 100px;
+  }
+
+  .flex {
+      flex-direction: column;
+  }
+
+  .titulo {
+      font-size: 30px;
+      width: 200px;
+  }
+  ul{
+      padding: 26px;
+  }
+}
+@media(max-width: 600px) {
+  .container {
+      width: 100%;
+  }
+
+  .card {
+      margin-bottom: 20px;
+      width: 90%;
+  }
+}
+@media(max-width: 800px) {
+  .img-medico-apontando-para-baixo {
+      display: block;
+      height: 200px;
+  }
+
+  .img-medico {
+      display: none;
+  }
+  ul{
+      padding-left: 100px;
+  }
+  li{
+      font-size: 1.8rem;
+  }
+
+}
+@media(max-width: 866px) {
+  .img-medico {
+      height: 150px;
+      position: relative;
+      left: 300px;
+      top: 20px;
+  }
+
+  ul {
+      padding-left: 250px;
+      margin-top: 15px;
+  }
+
+}
+@media(min-width: 1440px){
+  html{
+      font-size: 13px;
+  }
+}
